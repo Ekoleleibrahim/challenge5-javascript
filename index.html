@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: grid; align-items: center; min-height: 100vh;">
+    
+
+    <script>
+        function displayImage() {
+            const img = document.createElement("img");
+
+            if (window.confirm("Souhaitez-vous vraiment quitter le site?") === true) {
+                img.src = "nature1.jpg";
+            } else {
+                img.src = "nature2.jpg";
+            }
+            document.body.appendChild(img);
+        }
+
+        displayImage();
+    </script>
+</body>
+</html>
